@@ -9,9 +9,15 @@
 <body>
   
 <div class="parent">
-    <h1 id="texto1">
+    <div class="div1">
+        <h2 id="texto2">
         0
-    </h1>
+        </h2>
+        <h1 id="texto1">
+            0
+        </h1>
+    </div>
+ 
     <div onclick="mostrarNumero('%')" class="div2">
         %
     </div>
@@ -21,23 +27,23 @@
     <div onclick="mostrarNumero('C')"class="div4">
         C
     </div>
-    <div onclick="eliminar('joder')"class="div5">
-joder
+    <div onclick="eliminar('eliminar')"class="div5">
+        eliminar
     </div>
     <div onclick="mostrarNumero('1/x')"class="div9">
         1/x
     </div>
-    <div onclick="mostrarNumero('÷')"class="div6">
+    <div onclick="modo('/')"class="div6">
         ÷
     </div>
     <div onclick="mostrarNumero('x²')"class="div7">
         x²
     </div>
-    <div onclick="mostrarNumero('√x')"class="div8">
+    <div onclick="raiz()"class="div8">
         √x
     </div>
 
-    <div onclick="mostrarNumero('-')"class="div10">
+    <div onclick="modo('-')"class="div10">
         -
     </div>
     <div onclick="mostrarNumero('7')"class="div11">
@@ -49,10 +55,10 @@ joder
     <div onclick="mostrarNumero('9')"class="div12">
         9
     </div>
-    <div onclick="mostrarNumero('x')"class="div13">
+    <div id="multiplicacion" onclick="modo('*')"class="div13">
         x
     </div>
-    <div onclick="sumar('+')"class="div14">
+    <div onclick="modo('+')" class="div14">
         +
     </div>
     <div onclick="mostrarNumero('4')"class="div15">
@@ -64,7 +70,7 @@ joder
     <div onclick="mostrarNumero('6')"class="div17">
         6
     </div>
-    <div onclick="mostrarNumero('=')"class="div18">
+    <div onclick="igual('=')"class="div18">
         =
     </div>
     <div onclick="mostrarNumero('1')"class="div19">
