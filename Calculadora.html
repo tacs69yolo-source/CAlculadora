@@ -7,44 +7,113 @@
     <link rel="stylesheet" href="calculadora.css">
 </head>
 <body>
-  
-<div class="parent">
-    <div class="div1">
-        <h2 id="texto2">
+  <!-- From Uiverse.io by Daniel1227k --> 
+<div class="card">
+  <b>
+    <div class="parent">
+    <div style="background-image: url(https://gifdb.com/images/thumbnail/animated-red-matrix-hacker-screen-4qghkwupxs860c28.gif);" class="div1">
+        
+        
+        <h3 id="texto2">
         0
-        </h2>
+        </h3>
         <h1 id="texto1">
             0
         </h1>
     </div>
  
     <div onclick="mostrarNumero('%')" class="div2">
-        %
+<button class="button" data-text="Awesome">
+    <span class="actual-text">&nbsp;%&nbsp;</span>
+    <span aria-hidden="true" class="hover-text">&nbsp;%&nbsp;</span>
+</button>
     </div>
-    <div onclick="mostrarNumero('CE')"class="div3">
-        CE
+    <div onclick="borrarArriba('CE')"class="div3">
+        <!-- From Uiverse.io by satyamchaudharydev --> 
+<button class="button" data-text="Awesome">
+    <span class="actual-text">&nbsp;CE&nbsp;</span>
+    <span aria-hidden="true" class="hover-text">&nbsp;CE&nbsp;</span>
+</button>
     </div>
-    <div onclick="mostrarNumero('C')"class="div4">
-        C
+    <div onclick="borrarTodo('C')"class="div4">
+<button class="button" data-text="Awesome">
+    <span class="actual-text">&nbsp;C&nbsp;</span>
+    <span aria-hidden="true" class="hover-text">&nbsp;C&nbsp;</span>
+</button>
     </div>
     <div onclick="eliminar('eliminar')"class="div5">
-        eliminar
+<button aria-label="Delete item" class="delete-button">
+  <svg
+    class="trash-svg"
+    viewBox="0 -10 64 74"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g id="trash-can">
+      <rect
+        x="16"
+        y="24"
+        width="32"
+        height="30"
+        rx="3"
+        ry="3"
+        fill="#e74c3c"
+      ></rect>
+
+      <g transform-origin="12 18" id="lid-group">
+        <rect
+          x="12"
+          y="12"
+          width="40"
+          height="6"
+          rx="2"
+          ry="2"
+          fill="#c0392b"
+        ></rect>
+        <rect
+          x="26"
+          y="8"
+          width="12"
+          height="4"
+          rx="2"
+          ry="2"
+          fill="#c0392b"
+        ></rect>
+      </g>
+    </g>
+  </svg>
+</button>
+
     </div>
     <div onclick="mostrarNumero('1/x')"class="div9">
-        1/x
+        <button class="button" data-text="Awesome">
+    <span class="actual-text">&nbsp;1/x&nbsp;</span>
+    <span aria-hidden="true" class="hover-text">&nbsp;1/x&nbsp;</span>
+</button>
     </div>
     <div onclick="modo('/')"class="div6">
-        ÷
+        <button class="button" data-text="Awesome">
+    <span class="actual-text">&nbsp;÷&nbsp;</span>
+    <span aria-hidden="true" class="hover-text">&nbsp;÷&nbsp;</span>
+</button>
     </div>
-    <div onclick="mostrarNumero('x²')"class="div7">
-        x²
+    <div onclick="mostrarNumero('²')"class="div7">
+             <button class="button" data-text="Awesome">
+    <span class="actual-text">&nbsp;x²&nbsp;</span>
+    <span aria-hidden="true" class="hover-text">&nbsp;x²&nbsp;</span>
+</button>
     </div>
     <div onclick="raiz()"class="div8">
-        √x
+        <button class="button" data-text="Awesome">
+    <span class="actual-text">&nbsp;√x&nbsp;</span>
+    <span aria-hidden="true" class="hover-text">&nbsp;√x&nbsp;</span>
+</button>
     </div>
 
     <div onclick="modo('-')"class="div10">
-        -
+          <button class="button" data-text="Awesome">
+    <span class="actual-text">&nbsp;-&nbsp;</span>
+    <span aria-hidden="true" class="hover-text">&nbsp;-&nbsp;</span>
+</button>
     </div>
     <div onclick="mostrarNumero('7')"class="div11">
         7
@@ -55,11 +124,17 @@
     <div onclick="mostrarNumero('9')"class="div12">
         9
     </div>
-    <div id="multiplicacion" onclick="modo('*')"class="div13">
-        x
+    <div id="multiplicacion" onclick="modo('x')"class="div44">
+          <button class="button" data-text="Awesome">
+    <span class="actual-text">&nbsp;x&nbsp;</span>
+    <span aria-hidden="true" class="hover-text">&nbsp;x&nbsp;</span>
+</button>
     </div>
     <div onclick="modo('+')" class="div14">
-        +
+          <button class="button" data-text="Awesome">
+    <span class="actual-text">&nbsp;+&nbsp;</span>
+    <span aria-hidden="true" class="hover-text">&nbsp;+&nbsp;</span>
+</button>
     </div>
     <div onclick="mostrarNumero('4')"class="div15">
         4
@@ -82,7 +157,7 @@
     <div onclick="mostrarNumero('3')"class="div21">
         3
     </div>
-    <div onclick="mostrarNumero('+/-')"class="div23">
+    <div onclick="modo('+/-')"class="div23">
         +/-
     </div>
     <div onclick="mostrarNumero('0')"class="div24">
@@ -92,6 +167,11 @@
         .
     </div>
 </div>
+
+  </b>
+    
+</div>
+
     <script src="calculadora.js">
 
     </script>

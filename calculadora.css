@@ -5,8 +5,9 @@
     grid-template-rows: repeat(7, 1fr);
     gap: 1px;
     width: max-content;
-}
     
+}
+ 
 .div1 {
     grid-column: span 4 / span 4;
     height: 200px;
@@ -15,6 +16,8 @@
     text-align: center;
     justify-content: end;
     font-size: xx-large;
+    background-color: rgb(32, 32, 32);
+
 
 }
 .multiplicacion{
@@ -25,12 +28,14 @@ div{
  display: flex;
  justify-content: center;
  align-items: center;
-    background-color: rgb(86, 92, 92);
+ font-size: 20px;
+    background-color: rgb(49, 49, 49);
     color: rgb(255, 255, 255);
     border: 2px rgb(0, 0, 0) solid;
     width: 100px;
     height: 60px;
     border-radius: 3px;
+    text-shadow: #bd0707;
 }
 div:hover{
     background-color:  rgb(63, 65, 65);
@@ -68,65 +73,273 @@ div:hover{
 
 .div11 {
     grid-row-start: 4;
-    background-color: rgb(33, 29, 36);
+     background-color: rgb(75, 75, 75);
 }
 
 .div12 {
     grid-row-start: 4;
-    background-color: rgb(33, 29, 36);
+     background-color: rgb(75, 75, 75);
 }
 
 .div13 {
     grid-row-start: 4;
-    background-color: rgb(33, 29, 36);
+     background-color: rgb(75, 75, 75);
 }
 
 
 .div15 {
     grid-row-start: 5;
-    background-color: rgb(33, 29, 36);
+    background-color: rgb(75, 75, 75);
 }
 
 .div16 {
     grid-row-start: 5;
-    background-color: rgb(33, 29, 36);
+     background-color: rgb(75, 75, 75);
 }
 
 .div17 {
     grid-row-start: 5;
-    background-color: rgb(33, 29, 36);
+     background-color: rgb(75, 75, 75);
 }
 
 
 .div19 {
     grid-row-start: 6;
-    background-color: rgb(33, 29, 36);
+     background-color: rgb(75, 75, 75);
 }
 
 .div20 {
     grid-row-start: 6;
-    background-color: rgb(33, 29, 36);
+    background-color: rgb(75, 75, 75);
 }
 
 .div21 {
     grid-row-start: 6;
-    background-color: rgb(33, 29, 36);
+     background-color: rgb(75, 75, 75);
 }
 
 
 .div23 {
     grid-row-start: 7;
-    background-color: rgb(33, 29, 36);
+     background-color: rgb(75, 75, 75);
 }
 
 .div24 {
     grid-row-start: 7;
     
-    background-color: rgb(33, 29, 36);
+     background-color: rgb(75, 75, 75);
 }
 
 .div25 {
     grid-row-start: 7;
-    background-color: rgb(33, 29, 36);
+     background-color: rgb(75, 75, 75);
 }
+
         
+        /* From Uiverse.io by Daniel1227k */ 
+.card {
+  position: relative;
+  width: 435px;
+  height: 610px;
+  background: rgb(121, 9, 9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 430px;
+  height: 610px;
+  background: linear-gradient(315deg,#a80202,#d80a0a);
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 430px;
+  height: 610px;
+  background: linear-gradient(315deg,#bd0707,#500707);
+  filter: blur(30px);
+}
+
+.card b {
+  position: absolute;
+  inset: 6px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+.card img {
+  position: absolute;
+  z-index: 3;
+  scale: 0.8;
+  opacity: 0.25;
+  transition: 0.5s;
+}
+
+.card:hover img {
+  scale: 0.5;
+  opacity: 0.9;
+  transform: translateY(-70px);
+}
+
+.card .content {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+.card:hover .content {
+  transform: scale(1);
+  bottom: 25px;
+}
+
+.content .title {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1em;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.content .title span {
+  font-weight: 300;
+  font-size: 0.70em;
+}
+
+.content .sci {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.sci li {
+  list-style: none;
+}
+
+.sci li .fa-brands {
+  width: 14px;
+}
+
+.sci li .fa-facebook {
+  width: 10px;
+}
+
+.sci li a {
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.2);
+  fill: currentColor;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+
+.sci li a:hover {
+  fill: currentColor;
+  color: rgba(255, 255, 255, 1);
+}
+/* From Uiverse.io by philipo30 */ 
+.delete-button {
+  position: relative;
+  padding: 0.5em;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1em;
+  transition: transform 0.2s ease;
+}
+
+.trash-svg {
+  width: 4em;
+  height: 4em;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  overflow: visible;
+}
+
+#lid-group {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.delete-button:hover #lid-group {
+  transform: rotate(-28deg) translateY(2px);
+}
+
+.delete-button:active #lid-group {
+  transform: rotate(-12deg) scale(0.98);
+}
+
+.delete-button:hover .trash-svg {
+  transform: scale(1.08) rotate(3deg);
+}
+
+.delete-button:active .trash-svg {
+  transform: scale(0.96) rotate(-1deg);
+}
+/* From Uiverse.io by satyamchaudharydev */ 
+/* === removing default button style ===*/
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(145, 143, 143, 0.6);
+  --animation-color: #df0000;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
